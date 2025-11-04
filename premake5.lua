@@ -46,6 +46,15 @@ project "dinput8"
 	files { "src/dinput8.cpp" }
 	files { "src/dinput8.def" }
 
+project "iphlpapi"
+	kind "SharedLib"
+	targetname "iphlpapi"
+
+	defines { "DLL_NAME=\"" .. "iphlpapi" .. "\"" }
+
+	files { "src/iphlpapi.cpp" }
+	files { "src/iphlpapi.def" }
+
 project "winmm"
 	kind "SharedLib"
 	targetname "winmm"
